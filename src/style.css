@@ -1,0 +1,22 @@
+li{
+    padding:6px ;
+}
+
+.content{
+    background-color: lightpink;
+}
+/* .row{
+    padding: 30px;
+} */
+.caption{
+    padding-left: 20px;
+}
+.bold{
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+   
+    padding: 0px;
+}

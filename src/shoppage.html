@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/src/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.7.0/css/all.css "
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ " crossorigin="anonymous ">
+    <script src="/src/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="header" style="padding: 20px 10px 10px 10px;">
+            <div class='row'>
+                <div class="col-md-2">
+                    <p class="fs-3 bold">ABC Book</p>
+                </div>
+                <div class="col-md-6">
+                    <input placeholder="Search book by author or publisher"
+                        style="padding: 10px 70px 10px 30px;border-radius: 40px;">
+                    <button type="button" class="btn btn-danger"
+                        style="border-radius:40px;padding: 10px 20px 10px 20px;">Search</button>
+                </div>
+                <div class="col-md-1">
+                    FAQ
+                </div>
+                <div class="col-md-1">
+                    Track Order
+                </div>
+                <div class="col-md-1">
+                    <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-danger" style="border-radius:40px;">Sign in</button>
+                </div>
+            </div>
+        </div>
+        <div class='content'>
+            <div class='row'>
+                <div class='col'>
+                    <nav class="navbar navbar-expand-sm  navbar-light justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link active fs-3 bold" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-3 bold" href="#">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-3 bold" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  active fs-3 bold" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-3 bold" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12 text-md-center'>
+                    <div id="demo" class="carousel slide " data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Novels.jpg" alt="Los Angeles" width="1100px" height="600px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="novel.jpg" alt="Chicago" width="1100px" height="600px">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="web-image-placeholder.jpg" alt="New York" width="1100px" height="600px">
+                            </div>
+                            <!-- <div class="carousel-item">
+                <div class='row' style="background-image: url('Novels.jpg');padding: 20px; margin: 60px;width: 1100px;height:600px;">
+                  <div class='col-md-6'><p class="fs-1 bold" style="color: white;">Wilma Mumduya</p></div>
+                  <div class='col-md-6'><button type="button" class="btn btn-danger" style="border-radius:40px;">View Details</button></div>
+                </div>
+              </div> -->
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class='row' style="padding: 40px 10px 40px 10px;">
+                <div class="col-md-12  text-md-center">
+                    <h1>Best Selling Books Ever</h1>
+                </div>
+            </div>
+
+            <div class="row " style="padding: 10px 20px 70px 50px;">
+
+                <div id="demo2" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class='row'>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="books001_820.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="516LWscPovL.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="9781529000634.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="fe9d144f-6188-4a4a-b9c3-4b875a09042a.jpg" alt="Nature"
+                                            style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+                                        <img src="516LWscPovL.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+                                        <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature"
+                                            style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class='row'>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="books001_820.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="516LWscPovL.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="9781529000634.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="fe9d144f-6188-4a4a-b9c3-4b875a09042a.jpg" alt="Nature"
+                                            style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="516LWscPovL.jpg" alt="Nature" style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="img-thumbnail">
+
+                                        <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature"
+                                            style="width:100%">
+                                        <div class="caption">
+                                            <p class="fs-3 bold">Moon Dance</p>
+                                            <p>J.R Rain</p>
+                                            <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i><i class='fa fa-star'
+                                                    style='color: #f3a135'></i></p>
+                                            <p>(120 Review) $50</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo2" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+    <div class='row' style="padding: 50px 50px 30px 50px;">
+        <div class='col-md-8'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h1>Featured this week</h1>
+                </div>
+                <div class="col-md-6 text-end"><button style="padding: 10px;background-color: white;">View All</button>
+                </div>
+
+            </div>
+            <div style="background-color: red;">
+                <div class='slide_show_over_redBg' style="margin: 30px;padding: 30px;">
+
+
+
+                    <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class='row'>
+                                    <div class='col-md-6'>
+                                        <img src="image.jpg" alt="Los Angeles" width="300px" height="400px">
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <p class="fs-1 bold " style="color: white;">The Rages of Dragon</p>
+                                        by Evan winter
+                                        <p class="fs-1 bold " style="color: white;">$50.00</p>
+                                        <p><i class='fa fa-star' style='color: white'></i><i class='fa fa-star'
+                                                style='color: white'></i><i class='fa fa-star'
+                                                style='color: white'></i><i class='fa fa-star'
+                                                style='color: white'></i><i class='fa fa-star' style='color: white'></i>
+                                            (120 Review)</p>
+                                        <button type="button" class="btn "
+                                            style="border-radius:40px;color: white;border: 1px solid white;">View
+                                            Details</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class='row'>
+                                    <div class='col-md-6'>
+                                        <img src="image.jpg" alt="Los Angeles" width="300px" height="400px">
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <p class="fs-1 bold " style="color: white;">The Rages of Dragon</p>
+                                        by Evan winter
+                                        <p class="fs-1 bold " style="color: white;">$50.00</p>
+                                        <p><i class='fa fa-star' style='color: white'></i><i class='fa fa-star'
+                                                style='color: white'></i><i class='fa fa-star'
+                                                style='color: white'></i><i class='fa fa-star'
+                                                style='color: white'></i><i class='fa fa-star' style='color: white'></i>
+                                            (120 Review)</p>
+                                        <button type="button" class="btn "
+                                            style="border-radius:40px;color: white;border: 1px solid white;">View
+                                            Details</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo1" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- <img src="image.jpg" alt="Novel-Worries" style="padding: 50px;" width="300px" height="550px" > -->
+            </div>
+        </div>
+        <div class='col-md-4'>
+            <img src="7811398762bd6a3233afa9e69dde41b0.jpg" alt="Joker" width="300px" height="500px">
+        </div>
+    </div>
+
+    <br>
+    <div class='row' style="padding: 20px 50px 0px 50px;">
+        <div class='col-md-6'>
+            <p class="fs-2 bold">Latest Published Items</p>
+        </div>
+        <div class='col-md-6'>
+            <button type="button" class="btn btn-outline-dark bold"
+                style="border-radius:40px;margin-left: 10px;">All</button>
+            <button type="button" class="btn btn-outline-dark bold"
+                style="border-radius:40px;margin-left: 10px;">Horror</button>
+            <button type="button" class="btn btn-outline-dark bold"
+                style="border-radius:40px;margin-left: 10px;">Thriller</button>
+            <button type="button" class="btn btn-outline-dark bold"
+                style="border-radius:40px;margin-left: 10px;">Science Fiction</button>
+            <button type="button" class="btn btn-outline-dark bold"
+                style="border-radius:40px;margin-left: 10px;">History</button>
+        </div>
+
+    </div>
+    <div class='row' style="padding: 0px 50px 30px 50px">
+        <div class="col-md-2">
+            <div class="img-thumbnail">
+
+                <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p class="fs-4 bold">Moon Dance</p>
+                    <p>J.R Rain</p>
+                    <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i><i class='fa fa-star' style='color: #f3a135'></i><i
+                            class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i></p>
+                    <p>(120 Review) $50</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="img-thumbnail">
+
+                <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p class="fs-4 bold">Moon Dance</p>
+                    <p>J.R Rain</p>
+                    <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i><i class='fa fa-star' style='color: #f3a135'></i><i
+                            class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i></p>
+                    <p>(120 Review) $50</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="img-thumbnail">
+
+                <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p class="fs-4 bold">Moon Dance</p>
+                    <p>J.R Rain</p>
+                    <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i><i class='fa fa-star' style='color: #f3a135'></i><i
+                            class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i></p>
+                    <p>(120 Review) $50</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-2">
+            <div class="img-thumbnail">
+
+                <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p class="fs-4 bold">Moon Dance</p>
+                    <p>J.R Rain</p>
+                    <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i><i class='fa fa-star' style='color: #f3a135'></i><i
+                            class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i></p>
+                    <p>(120 Review) $50</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="img-thumbnail">
+
+                <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p class="fs-4 bold">Moon Dance</p>
+                    <p>J.R Rain</p>
+                    <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i><i class='fa fa-star' style='color: #f3a135'></i><i
+                            class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i></p>
+                    <p>(120 Review) $50</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="img-thumbnail">
+
+                <img src="Harry-Potter-and-the-Sorcerers-Stone.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p class="fs-4 bold">Moon Dance</p>
+                    <p>J.R Rain</p>
+                    <p><i class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i><i class='fa fa-star' style='color: #f3a135'></i><i
+                            class='fa fa-star' style='color: #f3a135'></i><i class='fa fa-star'
+                            style='color: #f3a135'></i></p>
+                    <p>(120 Review) $50</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="text-md-center" style="padding: 20px 50px 30px 50px;">
+        <button type="button" class="btn btn-outline-danger bold" style="border-radius:40px;padding: 20px 50px;">Browse
+            More</button>
+    </div>
+
+
+    <div class='row' style="padding: 30px 50px 10px 50px;">
+        <div class='col-md-6'>
+            <div class='row'
+                style="background-image: url('wallpapersden.com_money-heist-mask_3000x1900.jpg');padding: 40px;margin: 10px;">
+                <div class='col-md-6'>
+                    <p class="fs-3 bold" style="color: white;">The History of Philino</p>
+                </div>
+                <div class='col-md-6'><button type="button" class="btn btn-danger" style="border-radius:40px;">View
+                        Details</button></div>
+
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <div class='row' style="background-image: url('e8.jpg');padding: 20px; margin: 10px;">
+                <div class='col-md-6'>
+                    <p class="fs-1 bold" style="color: white;">Wilma Mumduya</p>
+                </div>
+                <div class='col-md-6'><button type="button" class="btn btn-danger" style="border-radius:40px;">View
+                        Details</button></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='row text-md-center ' style=" padding: 0px 50px 0px 50px;">
+        <div class='col-md-12 bg-primary' style="color: white;padding: 80px;">
+            <p class="fs-1 bold">Join Newsletter</p>
+            <p class="text-dark text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla minus
+                laborum nobis voluptate exercitationem officia inventore quos incidunt totam vitae?</p>
+            <p><input style="border-radius:40px;padding: 9px;border: 0px;" placeholder="Enter Your Mail"> <button
+                    type="button" class="btn btn-danger" style="border-radius:40px;">Subscribe</button></p>
+        </div>
+    </div>
+
+
+    <div class='row ' style="padding:50px">
+        <div class='col-md-3'>
+            <p class=" bold text-primary">ABC Book</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis rerum atque qui fuga neque.
+            </p>
+        </div>
+        <div class='col-md-3'>
+            <p class=" bold">Book Category</p>
+            <ul>
+                <li>History</li>
+                <li>Horror-Thriller</li>
+                <li>Love Stories</li>
+                <li>Science Fiction</li>
+                <li>Business</li>
+            </ul>
+        </div>
+        <div class='col-md-3'>
+            <br>
+            <ul>
+                <li>Biography</li>
+                <li>Astrology</li>
+                <li>Digital Marketing</li>
+                <li>Software Development</li>
+                <li>Ecommerce</li>
+            </ul>
+        </div>
+        <div class='col-md-3'>
+            <p class=" bold">Site Map</p>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>FAQs</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class='text-md-center' style="padding: 60px;">Copyright &copy2022 All rights reserved | This template is made
+        with by colorlib</div>
+    </div>
+
+</body>
+
+</html>
